@@ -1,0 +1,114 @@
+/* Reset e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.product img {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #ccc;
+}
+
+form input, form select {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2c2c2c;
+  color: #fff;
+  font-size: 1em;
+}
+
+form input:focus, form select:focus {
+  outline: none;
+  background: #333;
+  border: 1px solid #00d1b2;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.payment-options label {
+  background: #2c2c2c;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #444;
+  transition: 0.3s;
+}
+
+.payment-options input[type="radio"] {
+  display: none;
+}
+
+.payment-options input[type="radio"]:checked + label {
+  background: #00d1b2;
+  color: #000;
+  border-color: #00d1b2;
+}
+
+.btn {
+  background: #00d1b2;
+  color: #000;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #00a896;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+  font-size: 0.9em;
+}
