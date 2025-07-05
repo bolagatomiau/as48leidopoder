@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>As 48 Leis do Poder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+      <div class="product">
+        <img src="MySQl/96e8a1fc-a275-46fa-ae13-570da7da2d95.png" alt="Capa do ebook">
+      </div>
+
+      <form id="checkout-form" action="checkout.php" method="POST">
+        <h2>Dados do comprador</h2>
+
+        <label>Nome completo:</label>
+        <input type="text" name="nome" required pattern="[A-Za-zÀ-ú\s]+" title="Somente letras.">
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>CPF ou CNPJ:</label>
+        <input type="text" name="cpf" required maxlength="18">
+
+        <label>Celular:</label>
+        <input type="text" name="celular" required pattern="\d+" maxlength="15">
+
+        <a href="https://pay.hotmart.com/B100378421I" target="_blank" class="btn">Comprar agora com Hotmart</a>
+
+      </form>
+    </main>
+
+    <footer>
+      <p>© 2025 Ruyter. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
